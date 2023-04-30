@@ -10,10 +10,4 @@ import com.fellahClasses.DMS.Models.Trainer;
 
 public interface DogRepository extends CrudRepository<Dog, Integer> {
 	List<Dog> findByName(String name);
-
-	void delete(Dog d);
-
-	Iterable<Dog> findAll();
-
-	Optional<Trainer> findById(int id);
 }
